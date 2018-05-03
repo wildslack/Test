@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderModule } from './header/header.module';
-
+import { LandingPageModule } from './landing-page/landing-page.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,8 @@ import { HeaderModule } from './header/header.module';
   ],
   imports: [
     BrowserModule,
-    HeaderModule
+    HeaderModule,
+    LandingPageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
