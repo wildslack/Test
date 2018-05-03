@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import {BeenInvitedModule} from './been-invited/been-invited.module'
 import { HeaderModule } from './header/header.module';
 import { LandingPageModule } from './landing-page/landing-page.module';
 
@@ -13,9 +14,10 @@ import { LandingPageModule } from './landing-page/landing-page.module';
   imports: [
     BrowserModule,
     HeaderModule,
-    LandingPageModule
+    LandingPageModule,
+    BeenInvitedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { }                                                                                                                                                                                                                                                                                                
