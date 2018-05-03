@@ -3,6 +3,8 @@ import * as Stomp from 'stompjs';
 import * as SockJS from 'sockjs-client';
 import $ from 'jquery';
 
+import { UserService } from './core/user.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,8 +15,11 @@ export class AppComponent {
   private title = 'WildSlack';
   private stompClient;
 
-  constructor(){
+  constructor(
+    private userService: UserService
+   ){
     this.initializeWebSocketConnection();
+    this.userService.getUsers();
   }
 
   initializeWebSocketConnection(){
